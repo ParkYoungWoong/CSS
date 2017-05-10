@@ -2,7 +2,7 @@
 
 ## TOC (Table of Contents)
 
-### [기본 선택자](#기본선택자들-basic-selectors)
+### [기본 선택자](#기본-선택자들-basic-selectors)
 
 | 선택자 | 의미 |
 |---|---|
@@ -29,7 +29,7 @@
 | `E[attr=val]` | `attr`속성의 값으로 `val`이 정확하게 일치하는 `E` 선택 |
 | `E[attr~=val]` | `attr`속성의 값으로 `val`이 포함된(공백으로) `E` 선택 |
 | `E[attr*=val]` | `attr`속성의 값으로 `val`이 포함된(모든) `E` 선택 |
-| `E[attr&#124;=val]` | `attr`속성의 값으로 `val`이 정확하게 일치하거나, `val-`로 시작하는 `E` 선택 |
+| <code>E[attr&#124;=val]</code> | `attr`속성의 값으로 `val`이 정확하게 일치하거나, `val-`로 시작하는 `E` 선택 |
 | `E[attr^=val]` | `attr`속성의 값이 `val`로 시작하는 `E` 선택 |
 | `E[attr$=val]` | `attr`속성의 값이 `val`로 끝나는 `E` 선택 |
 
