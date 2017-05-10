@@ -3,11 +3,11 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [CSS Selectors](#css-selectors)
-	- [선택자들](#)
-		- [기본 선택자](#-)
-	- [기본 선택자들 (Basic Selectors)](#-basic-selectors)
-		- [전체 (Universal Selector)](#-universal-selector)
-		- [태그 (Type Selector)](#-type-selector)
+	- [Table of Selectors](#table-of-selectors)
+		- [Basic](#basic)
+	- [Basic Selectors](#basic-selectors)
+		- [Universal Selector](#universal-selector)
+		- [Type Selector](#type-selector)
 		- [클래스 (Class Selector)](#-class-selector)
 		- [아이디 (ID Selector)](#-id-selector)
 - [E](#e)
@@ -20,7 +20,7 @@
 		- [일반 형제 (General Sibling Combinator)](#-general-sibling-combinator)
 	- [속성 선택자들 (Attribute Selectors)](#-attribute-selectors)
 		- [[속성]](#)
-		- [[속성=값]](#)
+		- [[attr=val]](#attrval)
 		- [[속성~=값]](#)
 		- [[속성|=값]](#)
 		- [[속성^=값]](#)
@@ -72,21 +72,25 @@
 
 <!-- /TOC -->
 
-## 선택자들
+## Table of Selectors
 
-### 기본 선택자
+### Basic
 
 | 선택자 | 의미 |
 |---|---|
-| [`*`](#universal-selector) | 모든 요소 선택 |
+| `*` | 모든 요소 선택 |
 | `E` | 태그명이 `E`인 요소 선택
 | `.E` | HTML class 속성 값이 `E`인 요소 선택 |
 | `#E` | HTML id 속성 값이 `E`인 요소 선택 |
 
 
-## 기본 선택자들 (Basic Selectors)
+## Basic Selectors
 
-### 전체 (Universal Selector)
+기본 선택자들
+
+### Universal Selector
+
+전체 선택자
 
 모든 요소 선택
 
@@ -99,7 +103,9 @@
 div > * { color: blue; }
 ```
 
-### 태그 (Type Selector)
+### Type Selector
+
+태그 선택자
 
 태그명이 `E`인 요소 선택
 
@@ -294,7 +300,7 @@ E[attr]
 <a href="#" title="hello world">HELLO WOLRD</a>
 ```
 
-### [속성=값]
+### [attr=val]
 
 `attr`속성의 값으로 `val`이 정확하게 일치하는 `E` 선택
 
