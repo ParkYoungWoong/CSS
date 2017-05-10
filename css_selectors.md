@@ -11,17 +11,17 @@
 | [`.E`](#클래스-class-selector) | HTML class 속성 값이 `E`인 요소 선택 |
 | [`#E`](#아이디-id-selector) | HTML id 속성 값이 `E`인 요소 선택 |
 
-### [복합 선택자](#복합선택자들-combinators)
+### [복합 선택자](#복합-선택자들-combinators)
 
 | 선택자 | 의미 |
 |---|---|
-| `EF` | `E`와 `F`를 동시에 만족하는 요소 선택 |
-| `E > F` | `E`의 자식 `F`를 선택 |
-| `E F` | `E`의 후손(하위요소) `F`를 선택 |
-| `E + F` | `E`의 다음 형제요소 `F` 하나만 선택 |
-| `E ~ F` | `E`의 다음 형제요소 `F` 모두 선택 |
+| [`EF`](#일치-basic-combinator) | `E`와 `F`를 동시에 만족하는 요소 선택 |
+| [`E > F`](#자식-child-combinator) | `E`의 자식 `F`를 선택 |
+| [`E F`](#후손-하위-descendant-combinator) | `E`의 후손(하위요소) `F`를 선택 |
+| [`E + F`](#인접-형제-adjacent-sibling-combinator) | `E`의 다음 형제요소 `F` 하나만 선택 |
+| [`E ~ F`](#일반-형제-general-sibling-combinator) | `E`의 다음 형제요소 `F` 모두 선택 |
 
-### 속성 선택자
+### [속성 선택자](#속성-선택자들-attribute-selectors)
 
 | 선택자 | 의미 |
 |---|---|
@@ -33,7 +33,7 @@
 | `E[attr^=val]` | `attr`속성의 값이 `val`로 시작하는 `E` 선택 |
 | `E[attr$=val]` | `attr`속성의 값이 `val`로 끝나는 `E` 선택 |
 
-### 가상 클래스 선택자
+### [가상 클래스 선택자](#가상-클래스-선택자들-pseudo-classes)
 
 | 선택자 | 의미 |
 |---|---|
@@ -65,7 +65,7 @@
 | `E:required` | 필수(required)로 작성해야 하는 양식(form) `E` 선택 |
 | `E:optional` | 필수가 아닌 선택적으로 작성하는 양식(form) `E` 선택 |
 
-### 가상 요소 선택자
+### [가상 요소 선택자](#가상-요소-선택자들-pseudo-elements)
 
 | 선택자 | 의미 |
 |---|---|
