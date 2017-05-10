@@ -1,5 +1,17 @@
 # CSS Selectors
 
+## 선택자들
+
+### 기본 선택자
+
+| 선택자 | 의미 |
+|---|---|
+| [`*`](#전체) | 모든 요소 선택 |
+| `E` | 태그명이 `E`인 요소 선택
+| `.E` | HTML class 속성 값이 `E`인 요소 선택 |
+| `#E` | HTML id 속성 값이 `E`인 요소 선택 |
+
+
 ## 기본 선택자들 (Basic Selectors)
 
 ### 전체 (Universal Selector)
@@ -17,7 +29,7 @@ div > * { color: blue; }
 
 ### 태그 (Type Selector)
 
-태그명이 `E`인 요소를 선택
+태그명이 `E`인 요소 선택
 
 ```
 E
@@ -37,7 +49,7 @@ div { color: red; }
 
 ### 클래스 (Class Selector)
 
-HTML class 속성 값이 `E`인 요소를 선택
+HTML class 속성 값이 `E`인 요소 선택
 
 ```
 .E
@@ -54,7 +66,7 @@ HTML class 속성 값이 `E`인 요소를 선택
 
 ### 아이디 (ID Selector)
 
-HTML id 속성 값이 `E`인 요소를 선택
+HTML id 속성 값이 `E`인 요소 선택
 
 ```
 #E
