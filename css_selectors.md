@@ -1,30 +1,3 @@
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-
-- [CSS Selectors](#css-selectors)
-	- [기본 선택자들 (Basic Selectors)](#-basic-selectors)
-		- [전체 (Universal Selector)](#-universal-selector)
-		- [태그 (Type Selector)](#-type-selector)
-		- [클래스 (Class Selector)](#-class-selector)
-		- [아이디 (ID Selector)](#-id-selector)
-- [E](#e)
-- [hello { color: red; }](#hello-color-red-)
-	- [복합 선택자들 (Combinators)](#-combinators)
-		- [일치](#)
-		- [자식 (Child Combinator)](#-child-combinator)
-		- [후손(하위) (Descendant Combinator)](#-descendant-combinator)
-		- [인접 형제 (Adjacent Sibling Combinator)](#-adjacent-sibling-combinator)
-		- [일반 형제 (General Sibling Combinator)](#-general-sibling-combinator)
-	- [속성 선택자들 (Attribute Selectors)](#-attribute-selectors)
-		- [[속성]](#)
-		- [[속성=값]](#)
-		- [[속성~=값]](#)
-		- [[속성|=값]](#)
-		- [[속성^=값]](#)
-		- [[속성$=값]](#)
-		- [[속성*=값]](#)
-
-<!-- /TOC -->
-
 # CSS Selectors
 
 ## 기본 선택자들 (Basic Selectors)
