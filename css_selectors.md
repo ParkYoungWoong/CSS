@@ -1,80 +1,8 @@
 # CSS Selectors
 
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+## TOC (Table of Contents)
 
-- [CSS Selectors](#css-selectors)
-	- [Table of Selectors](#table-of-selectors)
-		- [Basic](#basic)
-	- [Basic Selectors](#basic-selectors)
-		- [Universal Selector](#universal-selector)
-		- [Type Selector](#type-selector)
-		- [클래스 (Class Selector)](#-class-selector)
-		- [아이디 (ID Selector)](#-id-selector)
-- [E](#e)
-- [hello { color: red; }](#hello-color-red-)
-	- [복합 선택자들 (Combinators)](#-combinators)
-		- [일치](#)
-		- [자식 (Child Combinator)](#-child-combinator)
-		- [후손(하위) (Descendant Combinator)](#-descendant-combinator)
-		- [인접 형제 (Adjacent Sibling Combinator)](#-adjacent-sibling-combinator)
-		- [일반 형제 (General Sibling Combinator)](#-general-sibling-combinator)
-	- [속성 선택자들 (Attribute Selectors)](#-attribute-selectors)
-		- [[속성]](#)
-		- [[attr=val]](#attrval)
-		- [[속성~=값]](#)
-		- [[속성|=값]](#)
-		- [[속성^=값]](#)
-		- [[속성$=값]](#)
-		- [[속성*=값]](#)
-	- [가상 클래스 선택자들 (Pseudo-Classes)](#-pseudo-classes)
-		- [링크 (The link)](#-the-link)
-			- [BEFORE VISIT](#before-visit)
-			- [AFTER VISIT](#after-visit)
-		- [동적 (The user action)](#-the-user-action)
-			- [ACTIVE](#active)
-			- [HOVER](#hover)
-			- [FOCUS](#focus)
-		- [구조적 (Structural)](#-structural)
-			- [ROOT](#root)
-			- [EMPTY](#empty)
-			- [FIRST CHILD](#first-child)
-			- [LAST CHILD](#last-child)
-			- [NTH CHILD](#nth-child)
-			- [NTH LAST CHILD](#nth-last-child)
-			- [ONLY CHILD](#only-child)
-			- [FIRST OF TYPE](#first-of-type)
-			- [LAST OF TYPE](#last-of-type)
-			- [NTH OF TYPE](#nth-of-type)
-			- [NTH LAST OF TYPE](#nth-last-of-type)
-			- [ONLY OF TYPE](#only-of-type)
-		- [언어 (Language)](#-language)
-		- [부정 (Negation)](#-negation)
-		- [목적 (The target)](#-the-target)
-		- [UI 요소 상태 (The UI element states)](#ui-the-ui-element-states)
-			- [ENABLED](#enabled)
-			- [DISABLED](#disabled)
-			- [CHECKED](#checked)
-			- [VALID](#valid)
-			- [INVALID](#invalid)
-			- [REQUIRED](#required)
-			- [OPTIONAL](#optional)
-		- [Not support IE](#not-support-ie)
-			- [READ ONLY](#read-only)
-			- [READ WRITE](#read-write)
-			- [IN RANGE](#in-range)
-			- [OUT OF RANGE](#out-of-range)
-	- [가상 요소 선택자들 (Pseudo-Elements)](#-pseudo-elements)
-		- [BEFORE](#before)
-		- [AFTER](#after)
-		- [FIRST LINE](#first-line)
-		- [FIRST LETTER](#first-letter)
-		- [SELECTION](#selection)
-
-<!-- /TOC -->
-
-## Table of Selectors
-
-### Basic
+### 기본 선택자
 
 | 선택자 | 의미 |
 |---|---|
@@ -83,14 +11,73 @@
 | `.E` | HTML class 속성 값이 `E`인 요소 선택 |
 | `#E` | HTML id 속성 값이 `E`인 요소 선택 |
 
+### 복합 선택자
 
-## Basic Selectors
+| 선택자 | 의미 |
+|---|---|
+| `EF` | `E`와 `F`를 동시에 만족하는 요소 선택 |
+| `E > F` | `E`의 자식 `F`를 선택 |
+| `E F` | `E`의 후손(하위요소) `F`를 선택 |
+| `E + F` | `E`의 다음 형제요소 `F` 하나만 선택 |
+| `E ~ F` | `E`의 다음 형제요소 `F` 모두 선택 |
 
-기본 선택자들
+### 속성 선택자
 
-### Universal Selector
+| 선택자 | 의미 |
+|---|---|
+| `E[attr]` | `attr`속성이 포함된 `E` 선택 |
+| `E[attr=val]` | `attr`속성의 값으로 `val`이 정확하게 일치하는 `E` 선택 |
+| `E[attr~=val]` | `attr`속성의 값으로 `val`이 포함된(공백으로) `E` 선택 |
+| `E[attr*=val]` | `attr`속성의 값으로 `val`이 포함된(모든) `E` 선택 |
+| `E[attr|=val]` | `attr`속성의 값으로 `val`이 정확하게 일치하거나, `val-`로 시작하는 `E` 선택 |
+| `E[attr^=val]` | `attr`속성의 값이 `val`로 시작하는 `E` 선택 |
+| `E[attr$=val]` | `attr`속성의 값이 `val`로 끝나는 `E` 선택 |
 
-전체 선택자
+### 가상 클래스 선택자
+
+| 선택자 | 의미 |
+|---|---|
+| `E:link` | 방문한 적 없는 링크 `E` 선택 |
+| `E:visited` | 방문한 적 있는 링크 `E` 선택 |
+| `E:active` | `E`에 마우스(클릭)나 키보드(엔터)가 눌린 동안에만 `E` 선택 |
+| `E:hover` | `E`에 마우스(포인터)가 올라가 있는 동안에만 `E` 선택 |
+| `E:focus` | `E`에 포커스가 되어있는 동안에만 `E` 선택 |
+| `E:root` | 문서 최상위 요소(`html`)를 선택 |
+| `E:empty` | 텍스트, 공백을 포함한 아무 자식(후손)요소도 없는 `E` 선택 |
+| `E:first-child` | `E`가 형제요소 중 첫번째 요소라면 선택 |
+| `E:last-child` | `E`가 형제요소 중 마지막 요소라면 선택 |
+| `E:nth-child(n)` | `E`가 형제요소 중 `n`번째 요소라면 선택 |
+| `E:nth-last-child(n)` | `E`가 형제요소 중 뒤에서 `n`번째 요소라면 선택 |
+| `E:only-child` | `E`가 유일한 자식요소일 경우 선택 |
+| `E:first-of-type` | `E`의 타입(태그명)과 동일한 타입인 형제요소 중 `E`가 첫번째 요소라면 선택 |
+| `E:last-of-type` | `E`의 타입(태그명)과 동일한 타입인 형제요소 중 `E`가 마지막 요소라면 선택 |
+| `E:nth-of-type(n)` | `E`의 타입(태그명)과 동일한 타입인 형제요소 중 `E`가 `n`번째 요소라면 선택 |
+| `E:nth-last-of-type(n)` | `E`의 타입(태그명)과 동일한 타입인 형제요소 중 `E`가 뒤에서 `n`번째 요소라면 선택 |
+| `E:only-of-type` | `E`의 타입(태그명)과 동일한 타입인 형제요소 중 `E`가 유일한 자식요소일 경우 선택 |
+| `E:lang(L)` | `lang`속성의 값이 `Language-code`인 `E` 선택 |
+| `E:not(S)` | `Selector`가 아닌 `E` 선택 |
+| `E:target` | `E`의 URL 요청이 들어오면 선택(`id` 속성 필수) |
+| `E:enabled` | 사용 가능한(활성화) 양식(form) `E` 선택 |
+| `E:disabled` | 사용 불가능한(비활성화) 양식(form) `E` 선택 |
+| `E:checked` | 선택된 양식(form) `E` 선택 |
+| `E:valid` | 유효한 값을 가진 양식(form) `E` 선택 |
+| `E:invalid` | 잘못된 값을 가진 양식(form) `E` 선택 |
+| `E:required` | 필수(required)로 작성해야 하는 양식(form) `E` 선택 |
+| `E:optional` | 필수가 아닌 선택적으로 작성하는 양식(form) `E` 선택 |
+
+### 가상 요소 선택자
+
+| 선택자 | 의미 |
+|---|---|
+| `E::before` | `E` 의 내부에 앞에 내용(content)을 삽입 |
+| `E::after` | `E` 의 내부에 뒤에 내용(content)을 삽입 |
+| `E::first-line` | `E`의 첫번째 줄(line) 글자들을 선택 |
+| `E::first-letter` | `E`의 첫번째 글자(letter)를 선택 |
+| `E::selection` | 사용자가 선택한(강조한, 드래그한) 부분의 스타일을 설정 |
+
+## 기본 선택자들 (Basic Selectors)
+
+### 전체 (Universal Selector)
 
 모든 요소 선택
 
@@ -103,9 +90,7 @@
 div > * { color: blue; }
 ```
 
-### Type Selector
-
-태그 선택자
+### 태그 (Type Selector)
 
 태그명이 `E`인 요소 선택
 
@@ -161,9 +146,9 @@ HTML id 속성 값이 `E`인 요소 선택
 
 ## 복합 선택자들 (Combinators)
 
-### 일치
+### 일치 (Basic Combinator)
 
-`E`와 `F`를 동시에 만족하는 요소를 선택
+`E`와 `F`를 동시에 만족하는 요소 선택
 
 ```
 EF
@@ -300,7 +285,7 @@ E[attr]
 <a href="#" title="hello world">HELLO WOLRD</a>
 ```
 
-### [attr=val]
+### [속성=값]
 
 `attr`속성의 값으로 `val`이 정확하게 일치하는 `E` 선택
 
@@ -333,6 +318,22 @@ E[attr~=val]
 ```html
 <a href="#" title="hello world">HELLO WOLRD</a> <!--RED-->
 <a href="#" title="hello_world">HELLO WORLD</a>
+```
+
+### [속성*=값]
+
+`attr`속성의 값으로 `val`이 포함된(모든) `E` 선택
+
+```
+E[attr*=val]
+```
+
+```css
+[type=lo_] { color: red; }
+```
+
+```html
+<a href="#" title="hello_world">HELLO WORLD</a> <!--RED-->
 ```
 
 ### [속성|=값]
@@ -384,22 +385,6 @@ E[attr$=val]
 
 ```html
 <a href="#" title="hello world">HELLO WORLD</a> <!--RED-->
-```
-
-### [속성*=값]
-
-`attr`속성의 값으로 `val`이 포함되어 있는 `E` 선택
-
-```
-E[attr*=val]
-```
-
-```css
-[type=lo_] { color: red; }
-```
-
-```html
-<a href="#" title="hello_world">HELLO WORLD</a> <!--RED-->
 ```
 
 ## 가상 클래스 선택자들 (Pseudo-Classes)
