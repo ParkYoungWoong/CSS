@@ -391,6 +391,10 @@ input:focus { color: red; }
 }
 ```
 
+| Browsers | CR | IE/EG | FF | SF | OP |
+|---|---|---|---|---|---|
+| Version | 4.0 | 9.0 | 3.5 | 3.2 | 9.6 |
+
 #### EMPTY
 
 텍스트, 공백을 포함한 아무 자식(후손)요소도 없는 `E` 선택
@@ -402,6 +406,10 @@ E:empty
 ```css
 div:empty { width: 100px; }
 ```
+
+| Browsers | CR | IE/EG | FF | SF | OP |
+|---|---|---|---|---|---|
+| Version | 4.0 | 9.0 | 3.5 | 3.2 | 9.6 |
 
 #### FIRST CHILD
 
@@ -445,6 +453,10 @@ E:last-child
 </ul>
 ```
 
+| Browsers | CR | IE/EG | FF | SF | OP |
+|---|---|---|---|---|---|
+| Version | 4.0 | 9.0 | 3.5 | 3.2 | 9.6 |
+
 #### NTH CHILD
 
 `E`가 형제요소 중 `n`번째 요소라면 선택<br>
@@ -482,6 +494,10 @@ E:nth-child(n)
 </ul>
 ```
 
+| Browsers | CR | IE/EG | FF | SF | OP |
+|---|---|---|---|---|---|
+| Version | 4.0 | 9.0 | 3.5 | 3.2 | 9.6 |
+
 #### NTH LAST CHILD
 
 `E`가 형제요소 중 뒤에서 `n`번째 요소라면 선택<br>
@@ -503,6 +519,10 @@ E:nth-last-child(n)
 	<li>4</li>
 </ul>
 ```
+
+| Browsers | CR | IE/EG | FF | SF | OP |
+|---|---|---|---|---|---|
+| Version | 4.0 | 9.0 | 3.5 | 3.2 | 9.6 |
 
 #### ONLY CHILD
 
@@ -526,6 +546,10 @@ ul li:only-child { color: red; }
 	<li>2</li>
 </ul>
 ```
+
+| Browsers | CR | IE/EG | FF | SF | OP |
+|---|---|---|---|---|---|
+| Version | 4.0 | 9.0 | 3.5 | 3.2 | 9.6 |
 
 #### FIRST OF TYPE
 
@@ -558,6 +582,10 @@ div p:first-of-type { color: red; }
 </div>
 ```
 
+| Browsers | CR | IE/EG | FF | SF | OP |
+|---|---|---|---|---|---|
+| Version | 4.0 | 9.0 | 3.5 | 3.2 | 9.6 |
+
 #### LAST OF TYPE
 
 `E`의 타입(태그명)과 동일한 타입인 형제요소 중 `E`가 마지막 요소라면 선택
@@ -588,6 +616,10 @@ div p:last-of-type { color: red; }
 	<p>6</p> <!--RED-->
 </div>
 ```
+
+| Browsers | CR | IE/EG | FF | SF | OP |
+|---|---|---|---|---|---|
+| Version | 4.0 | 9.0 | 3.5 | 3.2 | 9.6 |
 
 #### NTH OF TYPE
 
@@ -621,6 +653,10 @@ div p:nth-of-type(2) { color: red; }
 </div>
 ```
 
+| Browsers | CR | IE/EG | FF | SF | OP |
+|---|---|---|---|---|---|
+| Version | 4.0 | 9.0 | 3.5 | 3.2 | 9.6 |
+
 #### NTH LAST OF TYPE
 
 `E`의 타입(태그명)과 동일한 타입인 형제요소 중 `E`가 뒤에서 `n`번째 요소라면 선택<br>
@@ -653,6 +689,10 @@ div p:nth-last-of-type(2) { color: red; }
 </div>
 ```
 
+| Browsers | CR | IE/EG | FF | SF | OP |
+|---|---|---|---|---|---|
+| Version | 4.0 | 9.0 | 3.5 | 3.2 | 9.6 |
+
 #### ONLY OF TYPE
 
 `E`의 타입(태그명)과 동일한 타입인 형제요소 중 `E`가 유일한 자식요소일 경우 선택
@@ -673,6 +713,10 @@ E:only-of-type
 	<div>4</div>
 </div>
 ```
+
+| Browsers | CR | IE/EG | FF | SF | OP |
+|---|---|---|---|---|---|
+| Version | 4.0 | 9.0 | 3.5 | 3.2 | 9.6 |
 
 ### 언어 (Language)
 
@@ -716,6 +760,10 @@ ul li:not(.hello) { color: red; }
 </ul>
 ```
 
+| Browsers | CR | IE/EG | FF | SF | OP |
+|---|---|---|---|---|---|
+| Version | 4.0 | 9.0 | 3.5 | 3.2 | 9.6 |
+
 ### 목적 (The target)
 
 `E`의 URL 요청이 들어오면 선택<br>
@@ -733,6 +781,10 @@ E:target
 <a href="#hello">GO TO HELLO</a> <!--<a>를 선택할 경우-->
 <div id="hello" class="world">HELLO WORLD</div> <!--RED-->
 ```
+
+| Browsers | CR | IE/EG | FF | SF | OP |
+|---|---|---|---|---|---|
+| Version | 4.0 | 9.0 | 3.5 | 3.2 | 9.6 |
 
 ### UI 요소 상태 (The UI element states)
 
@@ -755,6 +807,10 @@ input:enabled { border: 1px solid red; }
 <input type="text"> <!--RED-->
 ```
 
+| Browsers | CR | IE/EG | FF | SF | OP |
+|---|---|---|---|---|---|
+| Version | 4.0 | 9.0 | 3.5 | 3.2 | 9.6 |
+
 #### DISABLED
 
 사용 불가능한(비활성화) 양식(form) `E` 선택<br>
@@ -773,6 +829,10 @@ input:disabled { border: 1px solid red; }
 <input type="text">
 <input type="text">
 ```
+
+| Browsers | CR | IE/EG | FF | SF | OP |
+|---|---|---|---|---|---|
+| Version | 4.0 | 9.0 | 3.5 | 3.2 | 9.6 |
 
 #### CHECKED
 
@@ -798,6 +858,121 @@ input:checked {
 <input type="radio" name="a">
 ```
 
+| Browsers | CR | IE/EG | FF | SF | OP |
+|---|---|---|---|---|---|
+| Version | 4.0 | 9.0 | 3.5 | 3.2 | 9.6 |
+
+#### VALID
+
+유효한 값을 가진 양식(form) `E` 선택
+
+```
+E:valid
+```
+
+```css
+input:valid { background: green; }
+```
+
+```html
+<input type="email" value="myID.mail.com">
+<input type="email" value="myID@mail.com"> <!--GREEN-->
+```
+
+| Browsers | CR | IE/EG | FF | SF | OP |
+|---|---|---|---|---|---|
+| Version | 10.0 | 10.0 | 4.0 | 5.0 | 10.0 |
+
+#### INVALID
+
+잘못된 값을 가진 양식(form) `E` 선택
+
+```
+E:invalid
+```
+
+```css
+input:invalid { background: red; }
+```
+
+```html
+<input type="email" value="myID.mail.com"> <!--RED-->
+<input type="email" value="myID@mail.com">
+```
+
+| Browsers | CR | IE/EG | FF | SF | OP |
+|---|---|---|---|---|---|
+| Version | 10.0 | 10.0 | 4.0 | 5.0 | 10.0 |
+
+#### REQUIRED
+
+필수(required)로 작성해야 하는 양식(form) `E` 선택
+
+```
+E:required
+```
+
+```css
+input:required { background: orange; }
+```
+
+```html
+<input type="name" placeholder="Your Name" required> <!--ORANGE-->
+<input type="email" placeholder="Your E-mail" required> <!--ORANGE-->
+<input type="text" placeholder="Your Age">
+```
+
+| Browsers | CR | IE/EG | FF | SF | OP |
+|---|---|---|---|---|---|
+| Version | 10.0 | 10.0 | 4.0 | 5.0 | 10.0 |
+
+#### OPTIONAL
+
+필수가 아닌 선택적으로 작성하는 양식(form) `E` 선택
+
+```
+E:optional
+```
+
+```css
+input:optional { background: aqua; }
+```
+
+```html
+<input type="name" placeholder="Your Name" required>
+<input type="email" placeholder="Your E-mail" required>
+<input type="text" placeholder="Your Age"> <!--AQUA-->
+```
+
+| Browsers | CR | IE/EG | FF | SF | OP |
+|---|---|---|---|---|---|
+| Version | 10.0 | 10.0 | 4.0 | 5.0 | 10.0 |
+
+### Not support IE
+
+#### READ ONLY
+
+```
+:read-only
+```
+
+#### READ WRITE
+
+```
+:read-write
+```
+
+#### IN RANGE
+
+```
+:in-range (not IE)
+```
+
+#### OUT OF RANGE
+
+```
+:out-of-range (not IE)
+```
 
 ## 가상 요소 선택자들 (Pseudo-Elements)
 
@@ -888,22 +1063,29 @@ p::first-letter { color: red; }
 <p>HELLO WORLD</p> <!--가장 앞에 'H'만 RED-->
 ```
 
-### 해야할 친구들
+### SELECTION
 
-:in-range
+사용자가 선택한(강조한, 드래그한) 부분의 스타일을 설정
 
-:out-of-range
+```
+E::selection
+```
 
-:valid
+```css
+p::-moz-selection { /* for Firefox */
+	background: red;
+	color: white;
+}
+p::selection {
+	background: red;
+	color: white;
+}
+```
 
-:invalid
+```html
+<p>HELLO WORLD</p>
+```
 
-:optional
-
-:required
-
-:read-only
-
-:read-write
-
-::selection
+| Browsers | CR | IE/EG | FF | SF | OP |
+|---|---|---|---|---|---|
+| Version | 4.0 | 9.0 | 2.0 | 3.1 | 10.1 |
