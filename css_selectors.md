@@ -17,7 +17,7 @@
 |---|---|
 | [`EF`](#일치-basic-combinator) | `E`와 `F`를 동시에 만족하는 요소 선택 |
 | [`E > F`](#자식-child-combinator) | `E`의 자식 `F`를 선택 |
-| [`E F`](#후손-하위-descendant-combinator) | `E`의 후손(하위요소) `F`를 선택 |
+| [`E F`](#후손하위-descendant-combinator) | `E`의 후손(하위요소) `F`를 선택 |
 | [`E + F`](#인접-형제-adjacent-sibling-combinator) | `E`의 다음 형제요소 `F` 하나만 선택 |
 | [`E ~ F`](#일반-형제-general-sibling-combinator) | `E`의 다음 형제요소 `F` 모두 선택 |
 
