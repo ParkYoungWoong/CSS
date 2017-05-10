@@ -2,16 +2,16 @@
 
 ## TOC (Table of Contents)
 
-### [기본 선택자](#basic-selectors)
+### 기본 선택자
 
 | 선택자 | 의미 |
 |---|---|
-| `*` | 모든 요소 선택 |
-| `E` | 태그명이 `E`인 요소 선택
-| `.E` | HTML class 속성 값이 `E`인 요소 선택 |
-| `#E` | HTML id 속성 값이 `E`인 요소 선택 |
+| [`*`](#전체-universal-selector) | 모든 요소 선택 |
+| [`E`](#태그-type-selector) | 태그명이 `E`인 요소 선택
+| [`.E`](#클래스-class-selector) | HTML class 속성 값이 `E`인 요소 선택 |
+| [`#E`](#아이디-id-selector) | HTML id 속성 값이 `E`인 요소 선택 |
 
-### [복합 선택자](#combinators)
+### 복합 선택자
 
 | 선택자 | 의미 |
 |---|---|
@@ -21,7 +21,7 @@
 | `E + F` | `E`의 다음 형제요소 `F` 하나만 선택 |
 | `E ~ F` | `E`의 다음 형제요소 `F` 모두 선택 |
 
-### [속성 선택자](#attributes-selectors)
+### 속성 선택자
 
 | 선택자 | 의미 |
 |---|---|
@@ -75,7 +75,7 @@
 | `E::first-letter` | `E`의 첫번째 글자(letter)를 선택 |
 | `E::selection` | 사용자가 선택한(강조한, 드래그한) 부분의 스타일을 설정 |
 
-## Basic Selectors (기본 선택자)
+## 기본 선택자들 (Basic Selectors)
 
 ### 전체 (Universal Selector)
 
@@ -144,7 +144,7 @@ HTML id 속성 값이 `E`인 요소 선택
 <div class="world">WORLD</div>
 ```
 
-## Combinators (복합 선택자)
+## 복합 선택자들 (Combinators)
 
 ### 일치 (Basic Combinator)
 
@@ -266,7 +266,7 @@ E ~ F
 </ul>
 ```
 
-## Attribute Selectors
+## 속성 선택자들 (Attribute Selectors)
 
 ### [속성]
 
@@ -387,7 +387,7 @@ E[attr$=val]
 <a href="#" title="hello world">HELLO WORLD</a> <!--RED-->
 ```
 
-## Pseudo-Classes (가상 클래스 선택자)
+## 가상 클래스 선택자들 (Pseudo-Classes)
 
 ### 링크 (The link)
 
@@ -1049,7 +1049,7 @@ input:optional { background: aqua; }
 :out-of-range (not IE)
 ```
 
-## Pseudo-Elements (가상 요소 선택자)
+## 가상 요소 선택자들 (Pseudo-Elements)
 
 ### BEFORE
 
