@@ -1061,6 +1061,9 @@ E::before
 ```
 
 ```css
+ul li:before { /* support IE 8 */
+	content: "$";
+}
 ul li::before {
 	content: "$";
 }
@@ -1080,6 +1083,10 @@ div::before {
 <div>HAPPY</div> <!--이미지 삽입됨-->
 ```
 
+| Browsers | CR | IE/EG | FF | SF | OP |
+|---|---|---|---|---|---|
+| Version | 4.0 | 9.0(8.0) | 3.5 | 3.1 | 7.0(4.0) |
+
 ### AFTER
 
 `E` 의 내부에 뒤에 내용(content)을 삽입
@@ -1089,6 +1096,9 @@ E::after
 ```
 
 ```css
+ul li::after { /* support IE 8 */
+	content: ".0";
+}
 ul li::after {
 	content: ".0";
 }
@@ -1102,6 +1112,10 @@ ul li::after {
 	<li>4</li> <!-- 4.0 -->
 </ul>
 ```
+
+| Browsers | CR | IE/EG | FF | SF | OP |
+|---|---|---|---|---|---|
+| Version | 4.0 | 9.0(8.0) | 3.5 | 3.1 | 7.0(4.0) |
 
 ### FIRST LINE
 
@@ -1122,6 +1136,10 @@ p::first-line { color: red; }
 </p>
 ```
 
+| Browsers | CR | IE/EG | FF | SF | OP |
+|---|---|---|---|---|---|
+| Version | 1.0 | 9.0(5.5) | 1.0 | 1.0 | 7.0(3.5) |
+
 ### FIRST LETTER
 
 `E`의 첫번째 글자(letter)를 선택
@@ -1137,6 +1155,10 @@ p::first-letter { color: red; }
 ```html
 <p>HELLO WORLD</p> <!--가장 앞에 'H'만 RED-->
 ```
+
+| Browsers | CR | IE/EG | FF | SF | OP |
+|---|---|---|---|---|---|
+| Version | 1.0 | 9.0(5.5) | 1.0 | 1.0 | 7.0(3.5) |
 
 ### SELECTION
 
