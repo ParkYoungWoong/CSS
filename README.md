@@ -12,4 +12,4 @@ HTML 요소들을 선택하여 CSS 선언
 
 HTML 요소들에 선언 가능한 CSS 속성들
 
-### [요소 크기 (Box size)](https://github.com/ParkYoungWoong/CSS/blob/master/css_properties_box_size.md)
+### [요소 크기 (Box size)](https://github.com/ParkYoungWoong/CSS/blob/master/properties/box_size.md)
