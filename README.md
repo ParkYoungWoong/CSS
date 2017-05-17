@@ -31,4 +31,4 @@ GitHub [@ParkYoungWoong](https://github.com/ParkYoungWoong)
 GitHub [CSS Issues](https://github.com/ParkYoungWoong/CSS/issues/new)  
 Google Email [thesecon@gmail.com](mail.google.com)
 
-잘못된 정보, 수정사항, 추가 내용, 오타 등 모든 피드백 받습니다~
+잘못된 정보, 추가 내용, 오타 등 모든 수정사항 피드백 받습니다~

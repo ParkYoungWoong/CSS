@@ -30,10 +30,28 @@ margin: TOP RIGHT BOTTOM LEFT;
 }
 ```
 
+#### 값이 3개일 경우
+
+```
+margin: TOP (LEFT,RIGHT) BOTTOM;
+```
+
+```css
+.hello {
+  margin: 10px 20px 30px;
+  /*
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  */
+}
+```
+
 #### 값이 2개일 경우
 
 ```
-margin: (TOP,BOTTOM) (LEFT,RIGHT)
+margin: (TOP,BOTTOM) (LEFT,RIGHT);
 ```
 
 ```css
@@ -51,7 +69,7 @@ margin: (TOP,BOTTOM) (LEFT,RIGHT)
 #### 값이 1개일 경우
 
 ```
-margin: (TOP,BOTTOM,LEFT,RIGHT)
+margin: (TOP,BOTTOM,LEFT,RIGHT);
 ```
 
 ```css
@@ -66,7 +84,7 @@ margin: (TOP,BOTTOM,LEFT,RIGHT)
 }
 ```
 
-### 마진 중복 현상 (병합, Margin Collapse)
+### 마진 중복 특성 (병합, Margin Collapse)
 
 마진의 특정 값들이 '중복'되어 합쳐지는 현상
 
@@ -147,7 +165,7 @@ margin: (TOP,BOTTOM,LEFT,RIGHT)
 }
 ```
 
-#### 부모와 자식 요소에서 중복 해결
+##### 부모와 자식 요소에서 중복 해결
 
 부모 요소에 아래의 속성들 중 하나를 추가  
 (무조건적 해결은 아니므로 상황에 맞게 활용)
@@ -197,9 +215,144 @@ margin: (TOP,BOTTOM,LEFT,RIGHT)
 
 ## `padding`
 
-요소의 '안쪽 여백'을 지정 (`단축속성`)
+요소의 '내부 여백'을 지정 (`단축속성`)  
+음수값 (Negative valuse) 사용 불가
 
 | 값 | 의미 | 기본값 |
 |---|---|---|
 | 단위 | `px`, `cm` 등 단위로 지정 | `0` |
 | `%` | 부모 요소의 너비에 대한 비율로 지정 |  |
+
+### 단축속성 사용법
+
+#### 값이 4개일 경우
+
+```
+padding: TOP RIGHT BOTTOM LEFT;
+```
+
+```css
+.hello {
+  padding: 10px 20px 30px 40px;
+  /*
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  */
+}
+```
+
+#### 값이 3개일 경우
+
+```
+padding: TOP (LEFT,RIGHT) BOTTOM;
+```
+
+```css
+.hello {
+  padding: 10px 20px 30px;
+  /*
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  */
+}
+```
+
+#### 값이 2개일 경우
+
+```
+padding: (TOP,BOTTOM) (LEFT,RIGHGT);
+```
+
+```css
+.hello {
+  padding: 10px 30px;
+  /*
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  */
+}
+```
+
+#### 값이 1개일 경우
+
+```
+padding: (TOP,BOTTOM,LEFT,RIGHT);
+```
+
+```css
+.hello {
+  padding: 10px;
+  /*
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  */
+}
+```
+
+### 특성
+
+추가된 패딩 값만큼 요소의 크기가 커지는 현상
+
+```css
+.box {
+  width: 100px; /* +40px = 140px */
+  height: 100px; /* +20px = 120px */
+  background: red;
+  padding: 10px 20px;
+}
+```
+
+#### 크기가 커지지 않도록 해결
+
+##### 값을 직접 계산
+
+`padding`을 추가하면서 `100 x 100` 크기의 요소를 만들 경우,  
+`padding`이 추가된 만큼 `width`, `height`에서 계산.
+
+```css
+.box {
+  width: 60px; /* +40px = 100px */
+  height: 80px; /* +20px = 100px */
+  background: red;
+  padding: 10px 20px;
+}
+```
+
+##### 자동으로 계산
+
+`padding`을 추가하면서 `100 x 100` 크기의 요소를 만들 경우,  
+계산하지 않고 `box-sizing(border-box)` 를 추가.
+
+```css
+.box {
+  width: 100px; /* 100px */
+  height: 100px; /* 100px */
+  background: red;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+```
+
+### `padding-top`
+
+요소의 '내부 위쪽 여백'을 지정
+
+### `padding-bottom`
+
+요소의 '내부 아래쪽 여백'을 지정
+
+### `padding-left`
+
+요소의 '내부 왼쪽 여백'을 지정
+
+### `padding-right`
+
+요소의 '내부 오른쪽 여백'을 지정
