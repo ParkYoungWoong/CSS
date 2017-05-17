@@ -2,7 +2,7 @@
 
 ## `margin`
 
-요소의 '바깥쪽 여백'을 지정 (`단축속성`)
+요소의 '바깥(외부) 여백'을 지정 (`단축속성`)
 
 | 값 | 의미 | 기본값 |
 |---|---|---|
@@ -84,7 +84,7 @@ margin: (TOP,BOTTOM,LEFT,RIGHT);
 }
 ```
 
-### 마진 중복 특성 (병합, Margin Collapse)
+### 특성: 마진 중복 (병합, Margin Collapse)
 
 마진의 특정 값들이 '중복'되어 합쳐지는 현상
 
@@ -196,20 +196,21 @@ margin: (TOP,BOTTOM,LEFT,RIGHT);
   margin-top: 50px;
 }
 ```
+### 개별속성들
 
-### `margin-top`
+#### `margin-top`
 
 요소의 '바깥 위쪽 여백'을 지정
 
-### `margin-bottom`
+#### `margin-bottom`
 
 요소의 '바깥 아래쪽 여백'을 지정
 
-### `margin-left`
+#### `margin-left`
 
 요소의 '바깥 왼쪽 여백'을 지정
 
-### `margin-right`
+#### `margin-right`
 
 요소의 '바깥 오른쪽 여백'을 지정
 
@@ -297,16 +298,67 @@ padding: (TOP,BOTTOM,LEFT,RIGHT);
 }
 ```
 
-### 특성
+### 특성: 크기 증가
 
-추가된 패딩 값만큼 요소의 크기가 커지는 현상
+[하단 내용 참조](#padding-border-공통-특성-크기-증가)
+
+### 개별속성들
+
+#### `padding-top`
+
+요소의 '내부 위쪽 여백'을 지정
+
+#### `padding-bottom`
+
+요소의 '내부 아래쪽 여백'을 지정
+
+#### `padding-left`
+
+요소의 '내부 왼쪽 여백'을 지정
+
+#### `padding-right`
+
+요소의 '내부 오른쪽 여백'을 지정
+
+## `border`
+
+요소의 '테두리 선'을 지정 (`단축속성`)
+
+| 값 | 의미 | 기본값 |
+|---|---|---|
+| `border-width` | 선의 두께 | `medium` |
+| `border-style` | 선의 종류 | `none` |
+| `border-color` | 선의 색상 | `black` |
+
+### 단축속성 사용법
+
+```
+border: WIDTH STYLE COLOR;
+```
+
+```css
+.hello {
+  border: 1px solid red;
+}
+```
+
+### 특성: 크기 증가
+
+[하단 내용 참조](#padding-border-공통-특성-크기-증가)
+
+---
+
+### `padding`, `border` 공통 특성: 크기 증가
+
+추가된 `padding`, `border` 값만큼 요소의 크기가 커지는 현상
 
 ```css
 .box {
-  width: 100px; /* +40px = 140px */
-  height: 100px; /* +20px = 120px */
+  width: 100px; /* +44px = 144px */
+  height: 100px; /* +24px = 124px */
   background: red;
   padding: 10px 20px;
+  border: 2px solid red;
 }
 ```
 
@@ -314,21 +366,22 @@ padding: (TOP,BOTTOM,LEFT,RIGHT);
 
 ##### 값을 직접 계산
 
-`padding`을 추가하면서 `100 x 100` 크기의 요소를 만들 경우,  
-`padding`이 추가된 만큼 `width`, `height`에서 계산.
+`padding`과 `border`를 추가하면서 `100 x 100`(px) 크기의 요소를 만들 경우,  
+`padding`과 `border`가 추가된 만큼 `width`, `height`에서 계산.
 
 ```css
 .box {
-  width: 60px; /* +40px = 100px */
-  height: 80px; /* +20px = 100px */
+  width: 56px; /* +44px = 100px */
+  height: 76px; /* +24px = 100px */
   background: red;
   padding: 10px 20px;
+  border: 2px solid red;
 }
 ```
 
 ##### 자동으로 계산
 
-`padding`을 추가하면서 `100 x 100` 크기의 요소를 만들 경우,  
+`padding`과 `border`를 추가하면서 `100 x 100`(px) 크기의 요소를 만들 경우,  
 계산하지 않고 `box-sizing(border-box)` 를 추가.
 
 ```css
@@ -337,22 +390,7 @@ padding: (TOP,BOTTOM,LEFT,RIGHT);
   height: 100px; /* 100px */
   background: red;
   padding: 10px 20px;
+  border: 2px solid red;
   box-sizing: border-box;
 }
 ```
-
-### `padding-top`
-
-요소의 '내부 위쪽 여백'을 지정
-
-### `padding-bottom`
-
-요소의 '내부 아래쪽 여백'을 지정
-
-### `padding-left`
-
-요소의 '내부 왼쪽 여백'을 지정
-
-### `padding-right`
-
-요소의 '내부 오른쪽 여백'을 지정
