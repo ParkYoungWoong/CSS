@@ -14,4 +14,21 @@ HTML 요소들에 선언 가능한 CSS 속성들
 
 ### [요소의 크기 (Box size)](https://github.com/ParkYoungWoong/CSS/blob/master/properties/box_size.md)
 
+`width`, `height`  
+`max-width`, `min-width`, `max-height`, `min-height`
+
 ### [요소의 모양 (Box model)](https://github.com/ParkYoungWoong/CSS/blob/master/properties/box_model.md)
+
+`margin`, `padding`, `border`  
+`margin-top`, `margin-bottom`, `margin-left`, `margin-right`  
+`padding-top`, `padding-bottom`, `padding-left`, `padding-right`  
+`border-top`, `border-bottom`, `border-left`, `border-right`  
+`border-weight`, `border-style`, `border-color`
+
+---
+
+GitHub [@ParkYoungWoong](https://github.com/ParkYoungWoong)  
+GitHub [CSS Issues](https://github.com/ParkYoungWoong/CSS/issues/new)  
+Google Email [thesecon@gmail.com](mail.google.com)
+
+잘못된 정보, 수정사항, 추가 내용, 오타 등 모든 피드백 받습니다~
