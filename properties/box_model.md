@@ -12,7 +12,7 @@
 
 ### 사용법
 
-[하단 공통 사용법 참조](#margin-padding-border-값이-1-4개일-경우)
+[하단 공통 사용법 참조](#margin-padding-border-공통-사용법-값단위이-14개일-경우)
 
 ### 특성: 마진 중복 (병합, Margin Collapse)
 
@@ -156,7 +156,7 @@
 
 ### 사용법
 
-[하단 공통 사용법 참조](#margin-padding-border-값이-1-4개일-경우)
+[하단 공통 사용법 참조](#margin-padding-border-공통-사용법-값단위이-14개일-경우)
 
 ### 특성: 크기 증가
 
@@ -208,7 +208,7 @@ border: WIDTH STYLE COLOR;
 
 추가된 `border` 값만큼 요소의 크기가 커지는 현상
 
-[하단 특성 참조](#padding-border-공통-특성-크기-증가)
+[하단 공통 특성 참조](#padding-border-공통-특성-크기-증가)
 
 ### 개별속성들
 
@@ -225,7 +225,7 @@ border: WIDTH STYLE COLOR;
 
 ##### 사용법
 
-[하단 공통 사용법 참조](#margin-padding-border-값이-1-4개일-경우)
+[하단 공통 사용법 참조](#margin-padding-border-공통-사용법-값단위이-14개일-경우)
 
 #### `border-style`
 
@@ -274,7 +274,9 @@ border: WIDTH STYLE COLOR;
 
 ---
 
-### `margin`, `padding`, `border` 값이 1~4개일 경우
+## 공통
+
+### `margin`, `padding`, `border` 공통 사용법: 값(단위)이 1~4개일 경우
 
 #### 값이 4개일 경우
 
@@ -361,7 +363,7 @@ border: WIDTH STYLE COLOR;
 
 ---
 
-### `padding`, `border` 특성: 크기 증가
+### `padding`, `border` 공통 특성: 크기 증가
 
 추가된 `padding`, `border` 값만큼 요소의 크기가 커지는 현상
 
