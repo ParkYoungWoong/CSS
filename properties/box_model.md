@@ -12,7 +12,7 @@
 
 ### 사용법
 
-[하단 공통 사용법 참조](#margin-padding-border-공통-사용법-값단위이-14개일-경우)
+하단 공통 사용법 [(값(단위)이 1~4개일 경우)](#margin-padding-border-공통-사용법-값단위이-14개일-경우) 참조
 
 ### 특성: 마진 중복 (병합, Margin Collapse)
 
@@ -156,13 +156,11 @@
 
 ### 사용법
 
-[하단 공통 사용법 참조](#margin-padding-border-공통-사용법-값단위이-14개일-경우)
+하단 공통 사용법 [(값(단위)이 1~4개일 경우)](#margin-padding-border-공통-사용법-값단위이-14개일-경우) 참조
 
 ### 특성: 크기 증가
 
-추가된 `padding` 값만큼 요소의 크기가 커지는 현상
-
-[하단 공통 특성 참조](#padding-border-공통-특성-크기-증가)
+하단 공통 특성 [(크기 증가)](#padding-border-공통-특성-크기-증가) 참조
 
 ### 개별속성들
 
@@ -206,9 +204,7 @@ border: WIDTH STYLE COLOR;
 
 ### 특성: 크기 증가
 
-추가된 `border` 값만큼 요소의 크기가 커지는 현상
-
-[하단 공통 특성 참조](#padding-border-공통-특성-크기-증가)
+하단 공통 특성 [(크기 증가)](#padding-border-공통-특성-크기-증가) 참조
 
 ### 개별속성들
 
@@ -225,7 +221,19 @@ border: WIDTH STYLE COLOR;
 
 ##### 사용법
 
-[하단 공통 사용법 참조](#margin-padding-border-공통-사용법-값단위이-14개일-경우)
+하단 공통 사용법 [(값(단위)이 1~4개일 경우)](#margin-padding-border-공통-사용법-값단위이-14개일-경우) 참조
+
+```css
+.example {
+  border-width: 10px 20px 30px;
+  /*
+  border-top-width: 10px;
+  border-bottom-width: 30px;
+  border-left-width: 20px;
+  border-right-width: 20px;
+  */
+}
+```
 
 #### `border-style`
 
@@ -233,44 +241,185 @@ border: WIDTH STYLE COLOR;
 
 | 값 | 의미 | 기본값 |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| `none` | 선 없음 | `none` |
+| `hidden` | 선 없음과 동일 (`table` 요소의 `border` 충돌 제외) |  |
+| `dotted` | 점선 |  |
+| `dashed` | 파선 |  |
+| `solid` | 실선(일반선) |  |
+| `double` | 두 줄선 |  |
+| `groove` | 홈이 파여있는 모양(선) |  |
+| `ridge` | 솟은 모양(선, `groove`의 반대) |  |
+| `inset` | 전체가 들어간 모양(선) |  |
+| `outset` | 전체가 나온 모양(선) |  |
+
+##### 사용법
+
+하단 공통 사용법 [(값(단위)이 1~4개일 경우)](#margin-padding-border-공통-사용법-값단위이-14개일-경우) 참조
+
+```css
+.example {
+  border-style: solid dotted dashed double;
+  /*
+  border-top-style: solid;
+  border-right-style: dotted;
+  border-bottom-style: dashed;
+  border-left-style: double;
+  */
+}
+```
 
 #### `border-color`
 
+선의 색상(color)를 지정
+
+| 값 | 의미 | 기본값 |
+|---|---|---|
+| 색상 | 선의 색상을 지정 | `black` |
+| `transparent` | 투명한 선 (요소의 배경색이 보임) |  |
+
+##### 사용법
+
+하단 공통 사용법 [(값(단위)이 1~4개일 경우)](#margin-padding-border-공통-사용법-값단위이-14개일-경우) 참조
+
+```css
+.example {
+  border-color: red blue #000 rgba(255,255,255,.5);
+  /*
+  border-top-color: red;
+  border-right-color: blue;
+  border-bottom-color: #000;
+  border-left-color: rgba(255,255,255,.5);
+  */
+}
+```
+
 #### `border-top`
+
+요소의 '위쪽 선'을 지정
+
+```
+border-top: WIDTH STYLE COLOR;
+```
 
 ##### `border-top-width`
 
+요소의 '위쪽 선 두께'를 지정
+
+```
+border-top-width: WIDTH;
+```
+
 ##### `border-top-style`
+
+요소의 '위쪽 선 종류'를 지정
+
+```
+border-top-width: STYLE;
+```
 
 ##### `border-top-color`
 
+요소의 '위쪽 선 색상'을 지정
+
+```
+border-top-width: COLOR;
+```
+
 #### `border-bottom`
+
+요소의 '아래쪽 선'을 지정
+
+```
+border-bottom: WIDTH STYLE COLOR;
+```
 
 ##### `border-bottom-width`
 
+요소의 '아래쪽 선 두께'을 지정
+
+```
+border-bottom-width: WIDTH;
+```
+
 ##### `border-bottom-style`
+
+요소의 '아래쪽 선 종류'를 지정
+
+```
+border-bottom-style: STYLE;
+```
 
 ##### `border-bottom-color`
 
+요소의 '아래쪽 선 색상'을 지정
+
+```
+border-bottom-color: COLOR;
+```
+
 #### `border-left`
+
+요소의 '왼쪽 선'을 지정
+
+```
+border-left: WIDTH STYLE COLOR;
+```
 
 ##### `border-left-width`
 
+요소의 '왼쪽 선 두께'을 지정
+
+```
+border-left-width: WIDTH;
+```
+
 ##### `border-left-style`
+
+요소의 '왼쪽 선 종류'를 지정
+
+```
+border-left-style: STYLE;
+```
 
 ##### `border-left-color`
 
+요소의 '왼쪽 선 색상'을 지정
+
+```
+border-left-color: COLOR;
+```
+
 #### `border-right`
+
+요소의 '오른쪽 선'을 지정
+
+```
+border-right: WIDTH STYLE COLOR;
+```
 
 ##### `border-right-width`
 
+요소의 '오른쪽 선 두께'을 지정
+
+```
+border-right-width: WIDTH;
+```
+
 ##### `border-right-style`
 
+요소의 '오른쪽 선 종류'을 지정
+
+```
+border-right-style: STYLE;
+```
+
 ##### `border-right-color`
+
+요소의 '오른쪽 선 색상'을 지정
+
+```
+border-right-color: COLOR;
+```
 
 ---
 
