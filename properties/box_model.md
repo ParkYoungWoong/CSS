@@ -10,79 +10,9 @@
 | `auto` | 브라우저가 너비를 계산 |  |
 | `%` | 부모 요소의 너비에 대한 비율로 지정 |  |
 
-### 단축속성 사용법
+### 사용법
 
-#### 값이 4개일 경우
-
-```
-margin: TOP RIGHT BOTTOM LEFT;
-```
-
-```css
-.hello {
-  margin: 10px 20px 30px 40px;
-  /*
-  margin-top: 10px;
-  margin-right: 20px;
-  margin-bottom: 30px;
-  margin-left: 40px;
-  */
-}
-```
-
-#### 값이 3개일 경우
-
-```
-margin: TOP (LEFT,RIGHT) BOTTOM;
-```
-
-```css
-.hello {
-  margin: 10px 20px 30px;
-  /*
-  margin-top: 10px;
-  margin-bottom: 30px;
-  margin-left: 20px;
-  margin-right: 20px;
-  */
-}
-```
-
-#### 값이 2개일 경우
-
-```
-margin: (TOP,BOTTOM) (LEFT,RIGHT);
-```
-
-```css
-.hello {
-  margin: 10px 30px;
-  /*
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 30px;
-  margin-right: 30px;
-  */
-}
-```
-
-#### 값이 1개일 경우
-
-```
-margin: (TOP,BOTTOM,LEFT,RIGHT);
-```
-
-```css
-.hello {
-  margin: 10px;
-  /*
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  */
-}
-```
+[하단 공통 사용법 참조](#margin-padding-border-값이-1-4개일-경우)
 
 ### 특성: 마진 중복 (병합, Margin Collapse)
 
@@ -224,83 +154,15 @@ margin: (TOP,BOTTOM,LEFT,RIGHT);
 | 단위 | `px`, `cm` 등 단위로 지정 | `0` |
 | `%` | 부모 요소의 너비에 대한 비율로 지정 |  |
 
-### 단축속성 사용법
+### 사용법
 
-#### 값이 4개일 경우
-
-```
-padding: TOP RIGHT BOTTOM LEFT;
-```
-
-```css
-.hello {
-  padding: 10px 20px 30px 40px;
-  /*
-  padding-top: 10px;
-  padding-right: 20px;
-  padding-bottom: 30px;
-  padding-left: 40px;
-  */
-}
-```
-
-#### 값이 3개일 경우
-
-```
-padding: TOP (LEFT,RIGHT) BOTTOM;
-```
-
-```css
-.hello {
-  padding: 10px 20px 30px;
-  /*
-  padding-top: 10px;
-  padding-bottom: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-  */
-}
-```
-
-#### 값이 2개일 경우
-
-```
-padding: (TOP,BOTTOM) (LEFT,RIGHGT);
-```
-
-```css
-.hello {
-  padding: 10px 30px;
-  /*
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  */
-}
-```
-
-#### 값이 1개일 경우
-
-```
-padding: (TOP,BOTTOM,LEFT,RIGHT);
-```
-
-```css
-.hello {
-  padding: 10px;
-  /*
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  */
-}
-```
+[하단 공통 사용법 참조](#margin-padding-border-값이-1-4개일-경우)
 
 ### 특성: 크기 증가
 
-[하단 내용 참조](#padding-border-공통-특성-크기-증가)
+추가된 `padding` 값만큼 요소의 크기가 커지는 현상
+
+[하단 공통 특성 참조](#padding-border-공통-특성-크기-증가)
 
 ### 개별속성들
 
@@ -330,7 +192,7 @@ padding: (TOP,BOTTOM,LEFT,RIGHT);
 | `border-style` | 선의 종류 | `none` |
 | `border-color` | 선의 색상 | `black` |
 
-### 단축속성 사용법
+### 사용법
 
 ```
 border: WIDTH STYLE COLOR;
@@ -344,11 +206,162 @@ border: WIDTH STYLE COLOR;
 
 ### 특성: 크기 증가
 
-[하단 내용 참조](#padding-border-공통-특성-크기-증가)
+추가된 `border` 값만큼 요소의 크기가 커지는 현상
+
+[하단 특성 참조](#padding-border-공통-특성-크기-증가)
+
+### 개별속성들
+
+#### `border-width`
+
+선의 두께(width)를 지정
+
+| 값 | 의미 | 기본값 |
+|---|---|---|
+| `medium` | 중간 두께 | `medium` |
+| `thin` | 얇은 두께 |  |
+| `thick` | 두꺼운 두께 |  |
+| 단위 | `px`, `cm` 등 단위 |  |
+
+##### 사용법
+
+[하단 공통 사용법 참조](#margin-padding-border-값이-1-4개일-경우)
+
+#### `border-style`
+
+선의 종류(style)를 지정
+
+| 값 | 의미 | 기본값 |
+|---|---|---|
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+
+#### `border-color`
+
+#### `border-top`
+
+##### `border-top-width`
+
+##### `border-top-style`
+
+##### `border-top-color`
+
+#### `border-bottom`
+
+##### `border-bottom-width`
+
+##### `border-bottom-style`
+
+##### `border-bottom-color`
+
+#### `border-left`
+
+##### `border-left-width`
+
+##### `border-left-style`
+
+##### `border-left-color`
+
+#### `border-right`
+
+##### `border-right-width`
+
+##### `border-right-style`
+
+##### `border-right-color`
 
 ---
 
-### `padding`, `border` 공통 특성: 크기 증가
+### `margin`, `padding`, `border` 값이 1~4개일 경우
+
+#### 값이 4개일 경우
+
+'위'을 시작으로 '시계 방향'으로 해석
+
+```
+속성: TOP RIGHT BOTTOM LEFT;
+```
+
+```css
+.box {
+  margin: 10px 20px 30px 40px;
+  /*
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+  */
+}
+```
+
+#### 값이 3개일 경우
+
+1. 위
+1. 좌우 각각
+1. 아래
+
+```
+속성: TOP (LEFT,RIGHT) BOTTOM;
+```
+
+```css
+.box {
+  padding: 10px 20px 30px;
+  /*
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  */
+}
+```
+
+#### 값이 2개일 경우
+
+1. 위, 아래 각각
+1. 좌, 우 각각
+
+```
+속성: (TOP,BOTTOM) (LEFT,RIGHT);
+```
+
+```css
+.box {
+  border-width: 10px 30px;
+  /*
+  border-top-width: 10px;
+  border-bottom-width: 10px;
+  border-left-width: 30px;
+  border-right-width: 30px;
+  */
+}
+```
+
+#### 값이 1개일 경우
+
+위, 아래, 좌, 우 모두 같은 값
+
+```
+속성: (TOP,BOTTOM,LEFT,RIGHT);
+```
+
+```css
+.box {
+  margin: 10px;
+  /*
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  */
+}
+```
+
+---
+
+### `padding`, `border` 특성: 크기 증가
 
 추가된 `padding`, `border` 값만큼 요소의 크기가 커지는 현상
 
