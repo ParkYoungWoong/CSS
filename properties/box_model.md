@@ -1,5 +1,40 @@
 # 요소의 모양 (Box model)
 
+## TOC
+
+| 속성 | 의미 |
+|---|---|
+| `margin` | 바깥 여백 |
+| `margin-top` | 바깥 위쪽 여백 |
+| `margin-bottom` | 바깥 아래쪽 여백 |
+| `margin-left` | 바깥 왼쪽 여백 |
+| `margin-right` | 바깥 오른쪽 여백 |
+| `padding` | 내부 여백 |
+| `padding-top` | 내부 위쪽 여백 |
+| `padding-bottom` | 내부 아래쪽 여백 |
+| `padding-left` | 내부 왼쪽 여백 |
+| `padding-right` | 내부 오른쪽 여백 |
+| `border` | 테두리 선 |
+| `border-width` | 선의 두께 |
+| `border-style` | 선의 종류 |
+| `border-color` | 선의 색상 |
+| `border-top` | 위쪽 선 |
+| `border-top-width` | 위쪽 선의 두께 |
+| `border-top-style` | 위쪽 선의 종류 |
+| `border-top-color` | 위쪽 선의 색상 |
+| `border-bottom-top` | 아래쪽 선 |
+| `border-bottom-width` | 아래쪽 선의 두께 |
+| `border-bottom-style` | 아래쪽 선의 종류 |
+| `border-bottom-color` | 아래쪽 선의 색상 |
+| `border-left` | 왼쪽 선 |
+| `border-left-width` | 왼쪽 선의 두께 |
+| `border-left-style` | 왼쪽 선의 종류 |
+| `border-left-color` | 왼쪽 선의 색상 |
+| `border-right` | 오른쪽 선 |
+| `border-right-width` | 오른쪽 선의 두께 |
+| `border-right-style` | 오른쪽 선의 종류 |
+| `border-right-color` | 오른쪽 선의 색상 |
+
 ## `margin`
 
 요소의 '바깥(외부) 여백'을 지정 (`단축속성`)
