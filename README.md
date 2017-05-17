@@ -22,8 +22,9 @@ HTML 요소들에 선언 가능한 CSS 속성들
 `margin`, `padding`, `border`  
 `margin-top`, `margin-bottom`, `margin-left`, `margin-right`  
 `padding-top`, `padding-bottom`, `padding-left`, `padding-right`  
+`border-width`, `border-style`, `border-color`  
 `border-top`, `border-bottom`, `border-left`, `border-right`  
-`border-width`, `border-style`, `border-color`
+`border-top-width`, `border-top-style`, `border-top-color`, `border-bottom-width`, `border-bottom-style`, `border-bottom-color`, `border-left-width`, `border-left-style`, `border-left-color`,`border-bottom-width`, `border-bottom-style`, `border-bottom-color`
 
 ---
 
