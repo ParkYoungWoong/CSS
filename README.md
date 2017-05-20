@@ -12,12 +12,12 @@ HTML 요소들을 선택하여 CSS 선언
 
 HTML 요소들에 선언 가능한 CSS 속성들
 
-### [요소의 크기 (Box size)](https://github.com/ParkYoungWoong/CSS/blob/master/properties/box_size.md)
+### [요소의 모양 (크기, Box size)](https://github.com/ParkYoungWoong/CSS/blob/master/properties/box_model_size.md)
 
 `width`, `height`  
 `max-width`, `min-width`, `max-height`, `min-height`
 
-### [요소의 모양 (Box model)](https://github.com/ParkYoungWoong/CSS/blob/master/properties/box_model.md)
+### [요소의 모양 (여백과 선, Box model)](https://github.com/ParkYoungWoong/CSS/blob/master/properties/box_model_margin.md)
 
 `margin`, `padding`, `border`  
 `margin-top`, `margin-bottom`, `margin-left`, `margin-right`  
@@ -25,6 +25,8 @@ HTML 요소들에 선언 가능한 CSS 속성들
 `border-width`, `border-style`, `border-color`  
 `border-top`, `border-bottom`, `border-left`, `border-right`  
 `border-top-width`, `border-top-style`, `border-top-color`, `border-bottom-width`, `border-bottom-style`, `border-bottom-color`, `border-left-width`, `border-left-style`, `border-left-color`,`border-bottom-width`, `border-bottom-style`, `border-bottom-color`
+
+### [요소의 모양 (기타, Box model)](https://github.com/ParkYoungWoong/CSS/blob/master/properties/box_model_extend.md)
 
 ---
 
