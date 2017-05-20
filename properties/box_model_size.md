@@ -1,4 +1,15 @@
-# 요소의 크기 (Box size)
+# 모양 (크기, Box model - Size)
+
+## TOC
+
+| 속성 | 의미 | 특이사항 |
+|---|---|---|
+| `width` | 가로 너비 |  |
+| `max-width` | 최대 가로 너비 |  |
+| `min-width` | 최소 가로 너비 |  |
+| `height` | 세로 너비 |  |
+| `max-height` | 최대 세로 너비 |  |
+| `min-height` | 최소 세로 너비 |  |
 
 ## `width`
 
@@ -6,8 +17,19 @@
 
 | 값 | 의미 | 기본값 |
 |---|---|---|
-| `auto` | 브라우저가 너비를 계산 | `100%` 동등 |
+| `auto` | 브라우저가 너비를 계산 | `auto` |
 | 단위 | `px`, `cm` 등 단위로 지정 |  |
+
+```css
+.block {
+  display: block;
+  width: auto; /* 100% 동등 */
+}
+.inline {
+  display: inline;
+  width: auto; /* 0 동등 */
+}
+```
 
 ### `max-width`
 
@@ -24,7 +46,7 @@
 
 | 값 | 의미 | 기본값 |
 |---|---|---|
-| 단위 | `px`, `cm` 등 단위로 지정 | `0` 동등 |
+| 단위 | `px`, `cm` 등 단위로 지정 | `0` |
 
 ## `height`
 

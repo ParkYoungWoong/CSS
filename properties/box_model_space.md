@@ -1,4 +1,4 @@
-# 요소의 모양 (Box model)
+# 모양 (Box model - Space)
 
 ## TOC
 
