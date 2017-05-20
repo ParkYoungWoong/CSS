@@ -1,15 +1,15 @@
-# 모양 (Box model - Space)
+# 모양 (여백과 선, Box model - Space)
 
 ## TOC
 
 | 속성 | 의미 | 특이사항 |
 |---|---|---|
-| `margin` | 바깥 여백 | 마진 중복, 값이 1~4개일 때 |
+| `margin` | 바깥 여백 | 마진 중복 / 값이 1~4개일 때 |
 | `margin-top` | 바깥 위쪽 여백 |  |
 | `margin-bottom` | 바깥 아래쪽 여백 |  |
 | `margin-left` | 바깥 왼쪽 여백 |  |
 | `margin-right` | 바깥 오른쪽 여백 |  |
-| `padding` | 내부 여백 | 크기 증가, 값이 1~4개일 때 |
+| `padding` | 내부 여백 | 크기 증가 / 값이 1~4개일 때 |
 | `padding-top` | 내부 위쪽 여백 |  |
 | `padding-bottom` | 내부 아래쪽 여백 |  |
 | `padding-left` | 내부 왼쪽 여백 |  |

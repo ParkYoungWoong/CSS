@@ -4,7 +4,7 @@
 
 | 속성 | 의미 | 특이사항 |
 |---|---|---|
-| `box-sizing` | 요소의 크기에 `padding`, `border`를 포함 여부 |  |
+| `box-sizing` | 요소의 크기에 `padding`, `border` 포함 여부 |  |
 | `box-shadow` | 요소의 그림자 지정 |  |
 | `overflow` | 내용(자식요소) 넘쳤을 때 |  |
 | `overflow-x` | 내용이 X축으로 넘쳤을 때 |  |

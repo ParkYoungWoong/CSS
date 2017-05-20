@@ -2,7 +2,7 @@
 
 | 속성 | 의미 | 특이사항 |
 |---|---|---|
-| `float` | 요소를 좌우 방향으로 띄움(수평 정렬) | `float`해제 방법 |
+| `float` | 요소를 좌우 방향으로 띄움(수평 정렬) | `float`해제 방법 /  `display`수정 |
 | `clear` | `float`속성이 적용되지 않도록 지정(해제) |  |
 
 ## `float`
@@ -79,7 +79,7 @@
 .clearfix::after {
   content: "";
   clear: both;
-  display: block;
+  display: block; /* or `table` */
 }
 .left {
   float: left;
