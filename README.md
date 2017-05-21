@@ -36,7 +36,13 @@ HTML 요소들에 선언 가능한 CSS 속성들
 
 ### [위치 (Position)](https://github.com/ParkYoungWoong/CSS/blob/master/properties/position.md)
 
-`position`, `top`, `bottom`, `left`, `right`, `z-index`
+`position`, `top`, `bottom`, `left`, `right`,  
+`z-index`
+
+### [배경 (Background)](https://github.com/ParkYoungWoong/CSS/blob/master/properties/background.md)
+
+`background`  
+`background-color`, `background-image`, `background-repeat`, `background-position`, `background-size`, `background-origin`, `background-clip`, `background-attachment`
 
 ---
 
