@@ -36,6 +36,8 @@ HTML 요소들에 선언 가능한 CSS 속성들
 
 ### [위치 (Position)](https://github.com/ParkYoungWoong/CSS/blob/master/properties/position.md)
 
+`position`, `top`, `bottom`, `left`, `right`, `z-index`
+
 ---
 
 GitHub [@ParkYoungWoong](https://github.com/ParkYoungWoong)  
