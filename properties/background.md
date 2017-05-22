@@ -196,6 +196,63 @@ background-position: (X축, Y축);
 
 #### `background-size`
 
+배경 이미지의 크기를 지정
+
+| 값 | 의미 | 기본값 |
+|---|---|---|
+| `auto` |  | `auto` |
+| 단위 | `px`, `cm` 등 단위로 지정 |  |
+| `%` | 요소의 크기에 비례하여 지정.<br>`background-attachment: fixed;`가 지정되어 있을 경우 브라우저에 크기에 비례하여 지정됨. |  |
+| `cover` | 배경 이미지가 가능한 한 가장 크게 되도록 비율 조정.<br>요소의 전체 가로나 세로 너비를 덮음. |  |
+| `contain` | 배경 이미지의 가로, 세로 너비가 내용 영역 안에 모두 들어갈 수 범위에서 최대 크기로 조정 |  |
+
+##### 사용법
+
+```
+background-size: (VALUE1 VALUE2);
+```
+
+```css
+.example {
+  width: 100px;
+  height: 200px;
+  background-image: url("../img/image.jpg"); /* 20 x 20(px) */
+
+  background-size: auto; /* 20px, 20px */
+  background-size: 50px 100px; /* 50px, 100px (비율 깨짐) */
+  background-size: auto 50px; /* 50px, 50px */
+  background-size: 50px; /* 50px, auto = 50px, 50px */
+  background-size: 50% 50%; /* 50px, 100px (비율 깨짐) */
+  background-size: 50%; /* 50px, auto = 50px, 50px */
+
+  background-size: cover; /* 200px, 200px (오른쪽 넘침) */
+  background-size: contain; /* 100px, 100px */
+  background-size: cover contain; /* ERROR */
+}
+```
+
+`background-attachment: fixed`가 지정되어 있을 경우, `%`, `cover`, `contain` 값은 브라우저의 크기에 비례하여 지정됨.
+
+```css
+/* 브라우저 크기: 1600px, 800px 일 경우 */
+.example {
+  width: 100px;
+  height: 200px;
+  background-image: url("../img/image.jpg"); /* 20 x 20(px) */
+  background-attachment: fixed;
+
+  background-size: auto; /* 20px, 20px */
+  background-size: 50px; /* 50px, auto = 50px, 50px */
+  background-size: 50%; /* 800px, 800px */
+  background-size: cover; /* 1600px, 1600px */
+  background-size: contain; /* 800px, 800px */
+}
+```
+
+| Browsers | CR | IE/EG | FF | SF | OP |
+|---|---|---|---|---|---|
+| Version | 4.0(1.0) | 9.0 | 4.0(3.6) | 4.1(3.0) | 10.5(10.0) |
+
 #### `background-origin`
 
 #### `background-clip`
