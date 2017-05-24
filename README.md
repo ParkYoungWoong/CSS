@@ -28,7 +28,7 @@ HTML 요소들에 선언 가능한 CSS 속성들
 
 ### [모양 (기타, Box model)](https://github.com/ParkYoungWoong/CSS/blob/master/properties/box_model_etc.md)
 
-`box-sizing`, `box-shadow`, `overflow`, `overflow-x`, `overflow-y`, `visibility`, `opacity`
+`box-sizing`, `box-shadow`, `overflow`, `overflow-x`, `overflow-y`, `visibility`, `opacity`, `border-image`, `border-image-source`, `border-image-slice`, `border-image-width`, `border-image-outset`, `border-image-repeat`
 
 ### [정렬 (Float)](https://github.com/ParkYoungWoong/CSS/blob/master/properties/float.md)
 

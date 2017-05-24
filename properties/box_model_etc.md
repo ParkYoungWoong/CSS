@@ -11,7 +11,7 @@
 | `overflow-y` | 내용이 Y축으로 넘쳤을 때 |  |
 | `visibility` | 내용의 보여짐을 지정 | 다른 속성과 비교 |
 | `opacity` | 요소의 투명도 지정 |  |
-| `border-image` |  |  |
+| `border-image` | 테두리 선으로 사용될 이미지 설정 |  |
 | `border-image-source` |  |  |
 | `border-image-slice` |  |  |
 | `border-image-width` |  |  |
@@ -159,7 +159,42 @@ box-shadow: 수평 수직 흐림 크기 색상 내부;
 
 ## `opacity`
 
+요소의 투명도를 지정
+
+| 값 | 의미 | 기본값 |
+|---|---|---|
+| 숫자 | `0`부터 `1`사이의 소수점 숫자 | `1` |
+
+### 사용법
+
+```
+opacity: OPACITY;
+```
+
+```css
+.half {
+  opacity: 0.5; /* 50% 투명도, 반투명 */
+}
+.transparent {
+  opacity: 0; /* 0% 투명도, 투명 */
+}
+```
+
+| Browsers | CR | IE/EG | FF | SF | OP |
+|---|---|---|---|---|---|
+| Version | 4.0 | 9.0 | 2.0 | 3.1 | 9.0 |
+
 ## `border-image`
+
+일반 `border` 대신에 사용될 이미지를 설정 (단축속성)
+
+| 값 | 의미 | 기본값 |
+|---|---|---|
+| `border-image-source` | 사용할 이미지 경로 |  |
+| `border-image-slice` |  |  |
+| `border-image-width` |  |  |
+| `border-image-outset` |  |  |
+| `border-image-repeat` |  |  |
 
 ### `border-image-source`
 
