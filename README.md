@@ -44,6 +44,8 @@ HTML 요소들에 선언 가능한 CSS 속성들
 `background`  
 `background-color`, `background-image`, `background-repeat`, `background-position`, `background-size`, `background-origin`, `background-clip`, `background-attachment`
 
+### [W3C CSS 속성 목록](https://www.w3.org/Style/CSS/all-properties.en.html)
+
 ---
 
 GitHub [@ParkYoungWoong](https://github.com/ParkYoungWoong)  
