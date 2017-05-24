@@ -12,7 +12,7 @@
 | `background-position` | 배경 이미지의 위치 | `0 0` |
 | `background-size` | 배경 이미지의 크기 | `auto` |
 | `background-origin` | 배경 이미지의 위치 범위 | `padding-box` |
-| `background-clip` | 배경(색상 포함)이 나올 범위 | `border-box` |
+| `background-clip` | 배경(색상 포함)이 표현될 범위 | `border-box` |
 | `background-attachment` | 배경 이미지의 스크롤 여부 | `scroll` |
 
 ### 사용법
@@ -255,6 +255,117 @@ background-size: (VALUE1 VALUE2);
 
 #### `background-origin`
 
+배경 이미지의 위치 범위를 설정
+
+> 배경 이미지가 어떤 범위(보더 > 패딩 > 콘텐트)부터 시작할 것인지 설정
+
+> `background-attachment: fixed;`로 설정되어 있는 경우 `border-box`로 변경되고, 나머지 값은 사용 불가
+
+| 값 | 의미 | 기본값 |
+|---|---|---|
+| `padding-box` | 배경 이미지가 요소의 `padding` 범위부터 시작 | `padding-box` |
+| `border-box` | 배경 이미지가 요소의 `border` 범위부터 시작 |  |
+| `content-box` | 배경 이미지가 요소의 내용(content) 범위부터 시작 |  |
+
+##### 사용법
+
+```
+background-origin: ORIGIN;
+background: ORIGIN CLIP;
+```
+
+값을 하나만 사용할 경우 `background-origin`, `background-clip` 둘 다 적용.
+
+```css
+.exampla1 {
+  background: red url("../img/image.jpg") no-repeat padding-box;
+  /* ORIGIN: padding-box, CLIP: padding-box */
+}
+.exampla2 {
+  background: red url("../img/image.jpg") no-repeat padding-box content-box;
+  /* ORIGIN: padding-box, CLIP: content-box */
+}
+```
+
+| Browsers | CR | IE/EG | FF | SF | OP |
+|---|---|---|---|---|---|
+| Version | 4.0 | 9.0 | 4.0 | 3.0 | 10.5 |
+
 #### `background-clip`
 
+배경(색상 포함)이 표현될 범위 설정
+
+> 표현 범위 밖의 배경은 모두 잘림(clip)
+
+| 값 | 의미 | 기본값 |
+|---|---|---|
+| `border-box` | `border` 범위까지 표현 | `border-box` |
+| `padding-box` | `padding` 범위까지 표현 |  |
+| `content-box` | 내용(content) 범위까지 표현 |  |
+
+##### 사용법
+
+```
+background-clip: CLIP;
+background: ORIGIN CLIP;
+```
+
+```css
+.box {
+  background-clip: CLIP;
+}
+```
+
+값을 하나만 사용할 경우 `background-origin`, `background-clip` 둘 다 적용.
+
+```css
+.exampla1 {
+  background: red url("../img/image.jpg") no-repeat padding-box;
+  /* ORIGIN: padding-box, CLIP: padding-box */
+}
+.exampla2 {
+  background: red url("../img/image.jpg") no-repeat padding-box content-box;
+  /* ORIGIN: padding-box, CLIP: content-box */
+}
+```
+
+| Browsers | CR | IE/EG | FF | SF | OP |
+|---|---|---|---|---|---|
+| Version | 4.0 | 9.0 | 4.0 | 3.0 | 10.5 |
+
 #### `background-attachment`
+
+요소가 스크롤될 때 배경 이미지의 스크롤 여부 설정
+
+| 값 | 의미 | 기본값 |
+|---|---|---|
+| `scroll` | 배경 이미지가 요소를 따라서 같이 스크롤 됨 | `scroll` |
+| `fixed` | 배경 이미지가 뷰포트에 고정되어, 요소와 같이 스크롤되지 않음 |  |
+| `local` | 요소 내 스크롤 시 배경 이미지가 같이 스크롤 됨 |  |
+
+##### 사용법
+
+```
+background-attachment: ATTACHMENT;
+```
+
+`local` 값을 사용했을 경우, `overflow` 속성이 필요
+
+```html
+<div class="parent">
+  <div class="child"></div>
+</div>
+```
+
+```css
+.parent {
+  width: 500px;
+  height: 300px;
+  background: url("../img/image.png") no-repeat local;
+  overflow: auto;
+}
+.child {
+  width: 500px;
+  height: 600px;
+}
+```
