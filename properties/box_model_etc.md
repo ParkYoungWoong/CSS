@@ -9,7 +9,7 @@
 | `overflow` | 내용(자식요소) 넘쳤을 때 |  |
 | `overflow-x` | 내용이 X축으로 넘쳤을 때 |  |
 | `overflow-y` | 내용이 Y축으로 넘쳤을 때 |  |
-| `visibility` | 내용의 보여짐을 지정 | 다른 속성과 비교 |
+| `visibility` | 내용의 보여짐을 지정 | 다른 속성들과 비교 |
 | `opacity` | 요소의 투명도 지정 |  |
 | `border-image` | 테두리 선으로 사용될 이미지 설정 |  |
 | `border-image-source` |  |  |
