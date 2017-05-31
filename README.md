@@ -46,6 +46,9 @@ HTML 요소들에 선언 가능한 CSS 속성들
 
 ### [전환 (Transition)](https://github.com/ParkYoungWoong/CSS/blob/master/properties/transition.md)
 
+`transition`
+`transition-property`, `transition-duration`, `transition-timing-function`, `transition-delay`
+
 ### [W3C CSS 속성 목록](https://www.w3.org/Style/CSS/all-properties.en.html)
 
 ---
