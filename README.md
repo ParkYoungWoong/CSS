@@ -12,35 +12,57 @@ HTML 요소들을 선택하여 CSS 선언
 
 HTML 요소들에 선언 가능한 CSS 속성들
 
-### [모양 (크기, Box model - Size)](https://github.com/ParkYoungWoong/CSS/blob/master/properties/box_model_size.md)
+### [크기 (Box model - Size)](https://github.com/ParkYoungWoong/CSS/blob/master/properties/box_model_size.md)
 
 #### `width`
 
-##### `max-width`, `min-width`
+- `max-width`
+- `min-width`
 
 #### `height`
 
-##### `max-height`, `min-height`
+- `max-height`
+- `min-height`
 
-### [모양 (여백과 선, Box model - Space)](https://github.com/ParkYoungWoong/CSS/blob/master/properties/box_model_space.md)
+### [여백과 선 (Box model - Space)](https://github.com/ParkYoungWoong/CSS/blob/master/properties/box_model_space.md)
 
 #### `margin`
 
-##### `margin-top`, `margin-bottom`, `margin-left`, `margin-right`
+- `margin-top`
+- `margin-bottom`
+- `margin-left`
+- `margin-right`
 
 #### `padding`
 
-##### `padding-top`, `padding-bottom`, `padding-left`, `padding-right`
+- `padding-top`
+- `padding-bottom`
+- `padding-left`
+- `padding-right`
 
 #### `border`
 
-##### `border-width`, `border-style`, `border-color`
+- `border-width`
+- `border-style`
+- `border-color`
+- `border-top`
+- `border-top-width`
+- `border-top-style`
+- `border-top-color`
+- `border-bottom`
+- `border-bottom-width`
+- `border-bottom-style`
+- `border-bottom-color`
+- `border-left`
+- `border-left-width`
+- `border-left-style`
+- `border-left-color`
+- `border-right`
+- `border-right-width`
+- `border-right-style`
+- `border-right-color`
 
-##### `border-top`, `border-bottom`, `border-left`, `border-right`
-
-###### `border-top-width`, `border-top-style`, `border-top-color`, `border-bottom-width`, `border-bottom-style`, `border-bottom-color`, `border-left-width`, `border-left-style`, `border-left-color`, `border-bottom-width`, `border-bottom-style`, `border-bottom-color`
-
-### [모양 (기타, Box model - ETC)](https://github.com/ParkYoungWoong/CSS/blob/master/properties/box_model_etc.md)
+### [기타 모양 (Box model - ETC)](https://github.com/ParkYoungWoong/CSS/blob/master/properties/box_model_etc.md)
 
 #### `box-sizing`
 
@@ -48,7 +70,8 @@ HTML 요소들에 선언 가능한 CSS 속성들
 
 #### `overflow`
 
-##### `overflow-x`, `overflow-y`
+- `overflow-x`
+- `overflow-y`
 
 #### `visibility`
 
@@ -56,33 +79,49 @@ HTML 요소들에 선언 가능한 CSS 속성들
 
 #### `border-image`
 
-##### `border-image-source`, `border-image-slice`, `border-image-width`, `border-image-outset`, `border-image-repeat`
+- `border-image-source`
+- `border-image-slice`
+- `border-image-width`
+- `border-image-outset`
+- `border-image-repeat`
 
 ### [정렬 (Float)](https://github.com/ParkYoungWoong/CSS/blob/master/properties/float.md)
 
 #### `float`
 
-##### `clear`
+- `clear`
 
 ### [위치 (Position)](https://github.com/ParkYoungWoong/CSS/blob/master/properties/position.md)
 
 #### `position`
 
-##### `top`, `bottom`, `left`, `right`
-
-#### `z-index`
+- `top`
+- `bottom`
+- `left`
+- `right`
+- `z-index`
 
 ### [배경 (Background)](https://github.com/ParkYoungWoong/CSS/blob/master/properties/background.md)
 
 #### `background`  
 
-##### `background-color`, `background-image`, `background-repeat`, `background-position`, `background-size`, `background-origin`, `background-clip`, `background-attachment`
+- `background-color`
+- `background-image`
+- `background-repeat`
+- `background-position`
+- `background-size`
+- `background-origin`
+- `background-clip`
+- `background-attachment`
 
-### [전환 (Transition)](https://github.com/ParkYoungWoong/CSS/blob/master/properties/transition.md)
+### [애니메이션 전환 (Transition)](https://github.com/ParkYoungWoong/CSS/blob/master/properties/transition.md)
 
 #### `transition`
 
-##### `transition-property`, `transition-duration`, `transition-timing-function`, `transition-delay`
+- `transition-property`
+- `transition-duration`
+- `transition-timing-function`
+- `transition-delay`
 
 ### [W3C CSS 속성 목록](https://www.w3.org/Style/CSS/all-properties.en.html)
 
