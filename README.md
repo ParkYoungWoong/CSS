@@ -114,6 +114,49 @@ HTML 요소들에 선언 가능한 CSS 속성들
 - `background-clip`
 - `background-attachment`
 
+### [글자 1 (Font - basic)](https://github.com/ParkYoungWoong/CSS/blob/master/properties/font_basic.md)
+
+#### `font`
+
+- `font-style`
+- `font-variant`
+- `font-weight`
+- `font-size`
+- `line-height`
+- `font-family`
+
+### [글자 2 (Font - etc)](https://github.com/ParkYoungWoong/CSS/blob/master/properties/font_etc.md)
+
+#### `color`
+
+#### `text-align`
+
+#### `text-decoration`
+
+#### `text-indent`
+
+#### `text-overflow`
+
+#### `text-shadow`
+
+#### `text-transform`
+
+#### `letter-spacing`
+
+#### `white-space`
+
+#### `word-break`
+
+#### `word-spacing`
+
+#### `word-wrap`
+
+#### `direction`
+
+#### `unicode-bidi`
+
+#### `user-select`
+
 ### [애니메이션 전환 (Transition)](https://github.com/ParkYoungWoong/CSS/blob/master/properties/transition.md)
 
 #### `transition`

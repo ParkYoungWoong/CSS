@@ -120,7 +120,7 @@ transition-duration: 시간;
 | `ease-in` | 느리게 >> 빠르게 |  |
 | `ease-out` | 빠르게 >> 느리게 |  |
 | `ease-in-out` | 느리게 >> 빠르게 >> 느리게 |  |
-| `steps(n, start|end)` | 애니메이션을 `n`번 분할하여 보여줌 /<br>`n`은 양의 정수로 지정, `start` 혹은 `end`는 간격 내에서 값 변경이 발생하는 지점을 지정, 생략하면 `end`로 설정됨 |  |
+| `steps(n, 시작/끝)` | 애니메이션을 `n`번 분할하여 보여줌 /<br>`n`은 양의 정수로 지정, `start` 혹은 `end`는(`시작/끝` 부분) 간격 내에서 값 변경이 발생하는 지점을 지정, 생략하면 `end`로 설정됨 |  |
 | `step-start` | `steps(1, start)`와 동일  |  |
 | `step-end` | `steps(1, end)`와 동일 |  |
 | `cubic-bezier(n,n,n,n)` | 자신의 값을 정의(`0`과 `1` 사이의 값) |  |
